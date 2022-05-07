@@ -226,6 +226,9 @@ func main() {
 	router.PATCH("/somePatch", patching)
 	router.HEAD("/someHead", head)
 	router.OPTIONS("/someOptions", options)
+	
+	//using REMOVE to delete the route in router
+	router.REMOVE("GET","/someGet")
 
 	// By default it serves on :8080 unless a
 	// PORT environment variable was defined.
