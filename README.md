@@ -230,6 +230,8 @@ func main() {
 	router.PATCH("/somePatch", patching)
 	router.HEAD("/someHead", head)
 	router.OPTIONS("/someOptions", options)
+	router.Customize("get","/someCustomize", customize)
+
 
 	// By default it serves on :8080 unless a
 	// PORT environment variable was defined.
